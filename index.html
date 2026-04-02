@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity Regional High School Model United Nations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="amityshield.png">
+    <link rel="apple-touch-icon" href="amityshield.png">
+    <link rel="shortcut icon" href="amityshield.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#"><img src="munlogo.jpg" alt="Amity MUN Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#directors">Meet the Chairs</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Intro Section -->
+        <section id="hero" class="fade-in">
+            <h1 class="section-title">Our Secretariat</h1>
+            <p class="section-subtitle">Explore our organization and the amazing people that make it all happen at Amity.</p>
+            
+            <div class="hero-image-container fade-in">
+                <!-- Group photo of the whole team -->
+                <img src="groupphoto.jpg" alt="Amity Model UN Secretariat Team">
+            </div>
+        </section>
+
+        <!-- Leadership Team -->
+        <section id="exec-board" class="fade-in">
+            <div class="grid-container grid-2">
+                <!-- Card 1 -->
+                <div class="card" onclick="toggleBio('alexandra')">
+                    <img src="sec-gen.jpg" alt="Secretary General">
+                    <div class="card-overlay">
+                        <div class="card-role">Secretary General</div>
+                        <div class="card-name">Alexandra Palcic</div>
+                        <div class="card-bio" id="alexandra-bio" style="display: none;">
+                            <p>Alexandra is a current Amity sophomore and has been a part of Model UN since her first year in high school. She hopes to go into public service after college, and has a particular interest in international socioeconomic cooperation. Outside of politics, she enjoys reading, knitting, Dungeons & Dragons, and general nerdy stuff.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" onclick="toggleBio('emma-imanov')">
+                    <img src="dir-gen.jpg" alt="Director General">
+                    <div class="card-overlay">
+                        <div class="card-role">President/Co-President</div>
+                        <div class="card-name">Emma Imanov</div>
+                        <div class="card-bio" id="emma-imanov-bio" style="display: none;">
+                            <p>Co-President Emma Imanov, a junior at Amity High School, has proudly led the club for the past two years. She has been actively involved in Model UN since joining as a freshman, serving as the club's Social Media Manager. Emma is passionate about diplomacy, global affairs, and public speaking, and she hopes to pursue a future career in law. She looks forward to welcoming delegates and helping facilitate engaging, well-organized committee sessions. Having attended numerous conferences herself, she is committed to creating an experience that is both challenging and memorable for all participants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department Directors -->
+        <section id="directors" class="fade-in">
+            <h2 class="section-title">Meet the Chairs</h2>
+            <div class="grid-container grid-2">
+                <!-- Luca DiSorbo -->
+                <div class="card" onclick="toggleBio('luca')">
+                    <img src="luca-disorbo.jpg" alt="Luca DiSorbo">
+                    <div class="card-overlay">
+                        <div class="card-role">Director of Committees</div>
+                        <div class="card-name">Luca DiSorbo</div>
+                        <div class="card-bio" id="luca-bio" style="display: none;">
+                            <p>Director of Committees Luca DiSorbo is a sophomore at Amity who joined Model UN during his freshman year and serves as the club's Treasurer. With a passion for history, committee work, and diplomacy, Luca brings both dedication and experience to this conference. Outside of MUN, he enjoys reading, writing, and competing on the track team.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Emma Mathew -->
+                <div class="card" onclick="toggleBio('emma')">
+                    <img src="emma-mathew.jpg" alt="Emma Mathew">
+                    <div class="card-overlay">
+                        <div class="card-role">Director of Marketing/Design</div>
+                        <div class="card-name">Emma Mathew</div>
+                        <div class="card-bio" id="emma-bio" style="display: none;">
+                            <p>Emma is a sophomore in high school and has participated in Amity's Model United Nations club for two years. Outside of academics she enjoys painting, playing the piano, and competing in mock trial. She hope to pursue a future in law or economics.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Srestha Kompalli -->
+                <div class="card" onclick="toggleBio('srestha')">
+                    <img src="srestha-kompalli.jpg" alt="Srestha Kompalli">
+                    <div class="card-overlay">
+                        <div class="card-role">Director of Outreach</div>
+                        <div class="card-name">Srestha Kompalli</div>
+                        <div class="card-bio" id="srestha-bio" style="display: none;">
+                            <p>Srestha Kompalli is a sophomore at Amity Regional High School and has been a member of Amity's Model UN team for 2 years now. Club treasurer in her freshman year and secretary in her sophomore, Srestha is committed and passionate about Model UN. She also plans on pursuing a career in law. Outside of academic pursuits, Srestha enjoys reading, playing tennis, and listening to music. Srestha's enthusiasm for public speaking and civic engagement fuel her passion for hosting Amity's first model UN conference.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Theodore Anderson -->
+                <div class="card" onclick="toggleBio('theodore')">
+                    <img src="theodore-anderson.jpg" alt="Theodore Anderson">
+                    <div class="card-overlay">
+                        <div class="card-role">Director of Photography and Social Media</div>
+                        <div class="card-name">Theodore Anderson</div>
+                        <div class="card-bio" id="theodore-bio" style="display: none;">
+                            <p>Director of Photography and Social Media, Theodore Anderson, is a junior at ARHS in his first year of Model UN. He hopes to pursue a career in emergency medicine, but is separately interested in politics and social activism. Some of his hobbies include photography, classical guitar, and writing and editing for Wikipedia. His work can be found on Instagram @theodore_photo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advisor -->
+        <section id="advisor" class="fade-in">
+            <h2 class="section-title">Club Advisor</h2>
+            <div class="advisor-container">
+                <div class="advisor-card">
+                    <img src="advisor.jpg" alt="Jennifer Brechlin">
+                    <div class="advisor-info">
+                        <h3>Jennifer Brechlin</h3>
+                        <p class="advisor-role">Faculty Advisor</p>
+                        <p class="advisor-bio">Jennifer Brechlin serves as the dedicated faculty advisor for the Amity Model United Nations club, bringing years of experience in guiding students through diplomatic simulations and international affairs education. She is also an AP U.S. Government and Politics teacher.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content fade-in">
+            <!-- Col 1 -->
+            <div class="footer-col">
+                <h3>Club Information</h3>
+                <p>Amity Regional High School</p>
+                <p>25 Newton Road, Woodbridge, CT</p>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><strong>Presidents:</strong><br>
+                <a href="mailto:imanovem27@amityregion5.org">Emma Imanov</a> <a href="mailto:kintonch26@amityregion5.org">Chase Kinton</a></p>
+                <p><strong>Teacher Advisor:</strong><br><a href="mailto:jennifer.brechlin@amityregion5.org">Mrs. Jennifer Brechlin</a></p>
+                <p><strong>Principal:</strong><br><a href="mailto:Andre.Hauser@amityregion5.org">Andre Hauser</a></p>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="footer-col">
+                <h3>Other Information</h3>
+                <p><a href="https://www.amityregion5.org/arhs" target="_blank">School Website</a></p>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <!-- Map -->
+            <div class="footer-col map-container">
+                <!-- Google Map Embed for Amity Regional High School -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.9546615169756!2d-73.01030396705805!3d41.357556048993295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7dea7873da8b1%3A0xd7caf284167ca6fb!2sAmity%20Regional%20High%20School!5e0!3m2!1sen!2sil!4v1771448013232!5m2!1sen!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <p>&copy; 2026 Amity Regional High School Model United Nations. All rights reserved. Developed by <a href="https://dembsky.tech">Dembsky Technologies</a>.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Modal -->
+    <div id="memberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <h2 id="modalName"></h2>
+            <p id="modalRole"></p>
+            <p id="modalBio"></p>
+        </div>
+    </div>
+</body>
+</html>
